@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>plan</title>
+</head>
+<body>
+
+<style>
+	.b1{
+		position: absolute;
+		color: blue;
+		top: 10%;
+		left: 31%;
+        font-family: Rockwell;
+        background: transparent;
+        border: none;
+        color: black;
+        padding: 8px 20px;
+        text-align: center;
+        display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: #7BBDBC;
+      border: 2px solid #7F9E7B;
+
+	}
+
+	.b2{
+		position: absolute;
+		color: yellow;
+		top: 10%;
+		left: 60%;
+        font-family: Rockwell;
+        background: transparent;
+        border: none;
+        color: black;
+        padding: 8px 20px;
+        text-align: center;
+        display: inline-block;
+      font-size: 20px;
+      margin: 2px 2px;
+      cursor: pointer;
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: #7BBDBC;
+      border: 2px solid #7F9E7B;
+}
+.caja1{
+  position: absolute;	
+  top: 19%;
+  left: 43.5%;
+}
+
+.caja2{
+  position: absolute;	
+  top: 25%;
+  left: 43.5%;
+}
+ .r{
+  position: absolute;
+  font-family: Rockwell;
+  font-size: 15px;
+  top: 31%;
+  left: 45.5%;
+  font-size: 15px;
+ }
+
+.caja3{
+  position: absolute;	
+  top: 34%;
+  left: 43.5%;
+}
+ 
+
+
+
+	
+</style>
+
+<script type="text/javascript">
+       var m=0;
+        x = [];
+        function suma() {
+        var n1= Number(document.getElementById("numu").value);
+        var n2= Number(document.getElementById("numd").value);
+        var res=n1+n2;
+        document.getElementById('resu').value=res;
+        x.push(res);
+        res.value=x.length;
+        document.getElementById('cuenta').value=x;
+        
+
+        }
+
+        var n=0;
+        x = [];
+        function resta() {
+        var n1= Number(document.getElementById("numu").value);
+        var n2= Number(document.getElementById("numd").value);
+        var res=n1-n2;
+        document.getElementById('resu').value=res;
+        x.push(res);
+        res.value=x.length;
+        document.getElementById('cuenta').value=x;
+        
+
+        }
+
+</script>
+
+
+<p class="b1"><input type="button" value="SUMAR" onclick="suma();"></p>
+
+
+<p class="b2"><input type="button" value="RESTAR" onclick="resta();"></p>
+
+<p class="caja1"><input type="text" id="numu" placeholder="Ingrese un numero" ></p><br><br>
+<p class="caja2"><input type="text" id="numd" placeholder="Ingrese otro numero" ></p><br><br>  
+
+<p class="caja3"><input type="" id="resu" value=""></p>
+
+
+
+</body>
+</html>
